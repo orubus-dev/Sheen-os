@@ -134,6 +134,6 @@ int main(int argc,char **argv){
         struct pollfd pfd={.fd=-1,.events=0}; poll(&pfd,0,500);
     }
     stop_all(); write_status(status);
-    for(size_t i=0;i<service_count;i++)for(int j=0;j<service_count;j++){}
+    for(size_t i=0;i<service_count;i++)for(size_t j=0;j<service_count;j++){}
     return 0;
 }
